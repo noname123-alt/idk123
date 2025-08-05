@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>22 Reasons Why I Love You</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #d6006d;
+      margin-bottom: 30px;
+    }
+
+    .envelope {
+      position: relative;
+      width: 220px;
+      height: 140px;
+      margin: 0 auto;
+      background: #ffb6c1;
+      border: 2px solid #e75480;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.6s;
+    }
+
+    .envelope:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-width: 0 110px 70px 110px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+    }
+
+    .envelope.open:before {
+      transform: rotateX(180deg);
+      transform-origin: top;
+      transition: 0.5s;
+    }
+
+    .reasons {
+      display: none;
+      margin-top: 30px;
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #e75480;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .envelope.open + .reasons {
+      display: block;
+    }
+
+    .reasons li {
+      margin-bottom: 10px;
+      color: #8b0000;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💌 22 Reasons Why I Love You</h1>
+
+  <div class="envelope" onclick="this.classList.toggle('open')"></div>
+
+  <ul class="reasons">
+    <li>1. Talking to you makes my day 😊</li>
+    <li>2. You were kind shuru mein 💖</li>
+    <li>3. You're  caring 💕</li>
+    <li>4. You support me no matter what 🙌</li>
+    <li>5. You remember little details sometimes 💭</li>
+    <li>6. You make me laugh even on sad days 😂</li>
+    <li>7. You give the best hugs 🤗</li>
+    <li>8. You listen without judging 👂</li>
+    <li>9. You're my safe place 🛡️</li>
+    <li>10. You believe in me 🌟</li>
+    <li>11. You’re patient and understanding 🙏</li>
+    <li>12. You accept me as I am ❤️</li>
+    <li>13. You make life exciting 🎉</li>
+    <li>14. You’re my best friend 💬</li>
+    <li>15. Your touch is everything legit everything 📱</li>
+    <li>16. You make me feel lucky 🍀</li>
+    <li>17. You make me feel happy sometimes.💑</li>
+    <li>18. You're goofy and fun 🥰</li>
+    <li>19. You respect me always 🤝</li>
+    <li>20. You’re my biggest comfort 🌈</li>
+    <li>21. You make love feel real 💘</li>
+    <li>22. I simply love *you* — all of you 💗</li>
+  </ul>
+
+</body>
+</html>

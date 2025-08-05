@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #ff69b4;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff85c1;
+}
+
+.home-content {
+  margin-top: 40px;
+}
+
+.birthday-img {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.birthday-msg {
+  font-size: 1.3em;
+  margin: 20px 0;
+  color: #d63384;
+}
+
+.love-name {
+  font-size: 1.2em;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 50px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9em;
+  }
+
+  .birthday-img {
+    width: 140px;
+  }
+}
+.question-box {
+  margin-top: 60px;
+}
+
+.question-text {
+  font-size: 1.4em;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+.btn-group button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background  0.3s;
+}
+
+.btn-group button:hover {
+  background-color: #ff85c1;
+}
+
+.hearts-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  transform: rotate(45deg);
+  animation: floatUp linear infinite;
+  opacity: 0.7;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(126, 49, 81);
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(45deg);
+    opacity: 0;
+  }
+body {
+  background-color: #fff0f5;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.envelope-container {
+  width: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.envelope {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #ffb6c1;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.envelope.opened {
+  transform: rotateX(180deg);
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: #ff69b4;
+  border-bottom: 2px solid #ff1493;
+  transform-origin: top;
+  transition: transform 1s;
+}
+
+.envelope.opened .flap {
+  transform: rotateX(-180deg);
+}
+
+.body {
+  padding: 20px;
+}
+
+.label {
+  font-weight: bold;
+  color: white;
+}
+
+#reasons {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #c71585;
+}
